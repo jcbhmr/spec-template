@@ -1,0 +1,11 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:linux",
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/bikeshed:latest": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["kainino.bikeshed"]
+    }
+  }
+}
