@@ -20,7 +20,8 @@ Click the <kbd>Use this template</kbd> button to get started!
 
 ### What's included
 
-- A dev script that starts an HTTP server and watches the `src/index.bs` for changes
+- A dev script that starts an HTTP server and watches the `src/index.bs` for
+  changes
 - A build script that generates the spec document
 - A GitHub Action to auto-publish the `main` branch to GitHub Pages
 - A starter example of how a specification is laid out
@@ -29,9 +30,30 @@ Click the <kbd>Use this template</kbd> button to get started!
 
 After using the template, you'll need to do a few things manually that we can't
 do for you:
+
 1. Turn on GitHub Pages in the Settings tab
 2. Update all the links scattered around to point to _your_ repo instead
-4. Add your own content 🎉!
+3. Add your own content 🎉!
+
+<details>
+  <summary>If your repository has a full-stop character in it...</summary>
+
+...then you'll need to do some additional config. Instead of just the
+`Repository: jcbhmr/spec-template` that you normally can use, you'll need to
+include all the derivative metadata that Bikeshed can't generate when the repo
+has a dot in the name.
+
+```md
+<pre class="metadata">
+URL: https://jcbhmr.github.io/spec-template/
+TR: https://jcbhmr.github.io/spec-template/
+Repository: https://github.com/jcbhmr/spec-template jcbhmr/spec-template
+Issue Tracking: GitHub https://github.com/jcbhmr/spec-template/issues
+Issue Tracker Template: https://github.com/jcbhmr/spec-template/issues/{0}
+</pre>
+```
+
+</details>
 
 ---
 
@@ -52,4 +74,5 @@ do for you:
 
 ## Usage
 
-You can view [the live spec text](https://jcbhmr.github.io/spec-template/) on GitHub Pages.
+You can view [the live spec text](https://jcbhmr.github.io/spec-template/) on
+GitHub Pages.
