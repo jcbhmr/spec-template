@@ -65,6 +65,9 @@ Issue Tracker Template: https://github.com/jcbhmr/spec-template/issues/{0}
 
 ![](https://thum.io/get/noanimate/crop/800/https://jcbhmr.github.io/spec-template/)
 
+**[Overview](https://github.com/jcbhmr/spec-template#readme)** |
+[Spec text](https://jcbhmr.github.io/spec-template/)
+
 </div>
 
 👨‍🔬 Uses cutting-edge science techniques \
@@ -74,5 +77,14 @@ Issue Tracker Template: https://github.com/jcbhmr/spec-template/issues/{0}
 
 ## Usage
 
+![GitHub Pages](https://img.shields.io/static/v1?style=for-the-badge&message=GitHub+Pages&color=222222&logo=GitHub+Pages&logoColor=FFFFFF&label=)
+
 You can view [the live spec text](https://jcbhmr.github.io/spec-template/) on
 GitHub Pages.
+
+## Development
+
+![Codespaces](https://img.shields.io/static/v1?style=for-the-badge&message=Codespaces&color=181717&logo=GitHub&logoColor=FFFFFF&label=)
+![Devcontainers](https://img.shields.io/static/v1?style=for-the-badge&message=Devcontainers&color=2496ED&logo=Docker&logoColor=FFFFFF&label=)
+![Python](https://img.shields.io/static/v1?style=for-the-badge&message=Python&color=3776AB&logo=Python&logoColor=FFFFFF&label=)
+![Bikeshed](https://img.shields.io/static/v1?style=for-the-badge&message=Bikeshed&color=005A9C&logo=&logoColor=FFFFFF&label=)
