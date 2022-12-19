@@ -1,12 +1,12 @@
 on:
   push:
     branches: [main]
-    paths: [src/**, .github/workflows/Publish spec.yml, scripts/**]
-concurrency:
-  group: pages
-  cancel-in-progress: true
+    paths: [src/**, .github/workflows/deploy.yml]
 jobs:
-  Publish_spec_to_GitHub_Pages:
+  deploy-github-pages:
+    concurrency:
+      group: deploy-github-pages
+      cancel-in-progress: true
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -17,9 +17,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: |
-          pipx install bikeshed && bikeshed update
-          scripts/build.sh
+      - uses: devcontainers/ci@v0.2
+        with:
+          runCmd: mkdir -vp dist && bikeshed spec src/index.bs dist/index.html
       - uses: actions/configure-pages@v2
       - uses: actions/upload-pages-artifact@v1
         with:
