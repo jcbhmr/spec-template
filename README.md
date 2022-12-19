@@ -1,30 +1,35 @@
 # Specification template
 
-📄 Template for format technical specifications
+📄 Template for formal technical specifications
 
 <div align="center">
 
-![](https://user-images.githubusercontent.com/61068799/204919848-b95c56ac-f904-43b7-83b8-233b6737f182.png)
+![](https://thum.io/get/noanimate/crop/800/https://jcbhmr.github.io/spec-template/)
 
 </div>
 
+🧠 Ready for your next big idea \
+🔖 Includes bibliography examples \
+🌐 Publishes to GitHub Pages \
+📂 Uses multiple `.bs` files
+
 ## Usage
 
-![Bikeshed](https://img.shields.io/static/v1?style=for-the-badge&message=Bikeshed&color=005A9C&logo=&logoColor=FFFFFF&label=)
-![GitHub Actions](https://img.shields.io/static/v1?style=for-the-badge&message=GitHub+Actions&color=2088FF&logo=GitHub+Actions&logoColor=FFFFFF&label=)
-![GitHub Pages](https://img.shields.io/static/v1?style=for-the-badge&message=GitHub+Pages&color=222222&logo=GitHub+Pages&logoColor=FFFFFF&label=)
-
-[![Use this template](https://img.shields.io/static/v1?style=for-the-badge&message=Use%20this%20template&color=2da44e&logo=&logoColor=FFFFFF&label=)](https://github.com/jcbhmr/spec-template/generate)
+![GitHub](https://img.shields.io/static/v1?style=for-the-badge&message=GitHub&color=181717&logo=GitHub&logoColor=FFFFFF&label=)
 
 Click the <kbd>Use this template</kbd> button to get started!
 
+<div align="center">
+
+![](https://i.imgur.com/Qq5OknS.png)
+
+</div>
+
 ### What's included
 
-- A dev script that starts an HTTP server and watches the `src/index.bs` for
-  changes
-- A build script that generates the spec document
-- A GitHub Action to auto-publish the `main` branch to GitHub Pages
-- A starter example of how a specification is laid out
+1. An example specification document
+2. A dev preview script that watches `src/index.bs`
+3. A GitHub Action to deploy the spec to GitHub Pages
 
 ### Manual steps
 
@@ -32,8 +37,10 @@ After using the template, you'll need to do a few things manually that we can't
 do for you:
 
 1. Turn on GitHub Pages in the Settings tab
-2. Update all the links scattered around to point to _your_ repo instead
-3. Add your own content 🎉!
+2. Find and replace every `jcbhmr.github.io/spec-template` with _your URL_
+3. Find and replace every `jcbhmr/spec-template` with _your repo_
+4. Remove the top half of `README.md`
+5. Add your own content! 🎉
 
 <details>
   <summary>If your repository has a full-stop character in it...</summary>
@@ -43,7 +50,7 @@ do for you:
 include all the derivative metadata that Bikeshed can't generate when the repo
 has a dot in the name.
 
-```md
+```bs
 <pre class="metadata">
 URL: https://jcbhmr.github.io/spec-template/
 TR: https://jcbhmr.github.io/spec-template/
@@ -66,7 +73,7 @@ Issue Tracker Template: https://github.com/jcbhmr/spec-template/issues/{0}
 ![](https://thum.io/get/noanimate/crop/800/https://jcbhmr.github.io/spec-template/)
 
 **[Overview](https://github.com/jcbhmr/spec-template#readme)** |
-[Spec text](https://jcbhmr.github.io/spec-template/)
+[Specification](https://jcbhmr.github.io/spec-template/)
 
 </div>
 
@@ -77,14 +84,28 @@ Issue Tracker Template: https://github.com/jcbhmr/spec-template/issues/{0}
 
 ## Usage
 
-![GitHub Pages](https://img.shields.io/static/v1?style=for-the-badge&message=GitHub+Pages&color=222222&logo=GitHub+Pages&logoColor=FFFFFF&label=)
+![HTML5](https://img.shields.io/static/v1?style=for-the-badge&message=HTML5&color=E34F26&logo=HTML5&logoColor=FFFFFF&label=)
 
-You can view [the live spec text](https://jcbhmr.github.io/spec-template/) on
-GitHub Pages.
+You can view the [Quantitative awesomeness] specification on GitHub Pages.
 
 ## Development
 
 ![Codespaces](https://img.shields.io/static/v1?style=for-the-badge&message=Codespaces&color=181717&logo=GitHub&logoColor=FFFFFF&label=)
 ![Devcontainers](https://img.shields.io/static/v1?style=for-the-badge&message=Devcontainers&color=2496ED&logo=Docker&logoColor=FFFFFF&label=)
-![Python](https://img.shields.io/static/v1?style=for-the-badge&message=Python&color=3776AB&logo=Python&logoColor=FFFFFF&label=)
 ![Bikeshed](https://img.shields.io/static/v1?style=for-the-badge&message=Bikeshed&color=005A9C&logo=&logoColor=FFFFFF&label=)
+
+This project makes heavy use of [Bikeshed] to generate the specification text.
+Bikeshed is an HTML-like format that incorporates inline-only Markdown styles
+and a custom autolink format.
+
+You can get started by [opening this repository in a GitHub Codespace], or by
+[opening this repository in a VS Code devcontainer]. After that, you'll be
+greeted by a fresh workspace ready for your edits. You can run `tools/dev.sh` or
+the `dev` VS Code Task to start the preview HTTP server.
+
+<!-- prettier-ignore-start -->
+[quantitative awesomeness]: https://jcbhmr.github.io/spec-template/
+[bikeshed]: https://tabatkins.github.io/bikeshed/
+[opening this repository in a GitHub Codespace]: https://docs.github.com/en/codespaces/getting-started/quickstart
+[opening this repository in a VS Code devcontainer]: https://code.visualstudio.com/docs/devcontainers/tutorial
+<!-- prettier-ignore-end -->
