@@ -5,7 +5,7 @@ Status: LS
 Repository: jcbhmr/spec-template
 Editor: Jacob Hummer, jcbhmr@outlook.com, https://jcbhmr.me/
 Markup Shorthands: markdown yes
-Abstract: Tellus integer feugiat scelerisque varius. Elementum integer enim neque volutpat. Placerat vestibulum lectus mauris ultrices.
+Abstract: 😎 Determine how awesome you are using science & statistics
 </pre>
 
 <pre class="include">path: intro.bs</pre>
