@@ -1,0 +1,11 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "dev",
+      "detail": "Start the dev preview server",
+      "type": "shell",
+      "command": "tools/dev.sh"
+    }
+  ]
+}

@@ -1,8 +1,6 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:linux",
-  "features": {
-    "ghcr.io/devcontainers-contrib/features/bikeshed:latest": {}
-  },
+  "image": "mcr.microsoft.com/devcontainers/python",
+  "postCreateCommand": "pipx install bikeshed && bikeshed update",
   "customizations": {
     "vscode": {
       "extensions": ["kainino.bikeshed"]
