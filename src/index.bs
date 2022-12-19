@@ -9,3 +9,17 @@ Abstract: 😎 Determine how awesome you are using science & statistics
 </pre>
 
 <pre class="include">path: intro.bs</pre>
+
+<pre class="biblio">
+{
+  "SEMVER": {
+    "id": "SEMVER",
+    "href": "https://semver.org/",
+    "authors": ["Tom Preston-Werner"],
+    "title": "Semantic Versioning"
+  }
+}
+</pre>
+<pre class="anchors">
+type: dfn; text: hello world; spec: WIKIPEDIA-HELLOWORLD; url: https://en.wikipedia.org/wiki/%22Hello,_World!%22_program;
+</pre>
